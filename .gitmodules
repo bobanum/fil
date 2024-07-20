@@ -1,0 +1,3 @@
+[submodule "webponents"]
+	path = webponents
+	url = https://github.com/bobanum/webponents
