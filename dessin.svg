@@ -1,0 +1,40 @@
+<svg width="512" height="512" version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="filter7769" x="-.0095618" y="-.0095618" width="1.0191" height="1.0191" color-interpolation-filters="sRGB">
+            <feGaussianBlur in="SourceAlpha" result="result1" stdDeviation="2"/>
+            <feTurbulence baseFrequency="0.040000000000000001" in="SourceGraphic" numOctaves="2" result="result4" type="fractalNoise"/>
+            <feDisplacementMap in="result1" in2="result4" result="result6" scale="10"/>
+            <feDiffuseLighting result="result5" surfaceScale="1.2276785714285712">
+                <feDistantLight azimuth="266" elevation="50"/>
+            </feDiffuseLighting>
+            <feTurbulence baseFrequency="0.040000000000000008" in="SourceGraphic"/>
+            <feColorMatrix result="result7" type="luminanceToAlpha"/>
+            <feSpecularLighting result="result8" surfaceScale="3.5964912280701746">
+                <feDistantLight/>
+            </feSpecularLighting>
+            <feComposite in="SourceGraphic" in2="result5" operator="atop" result="result9"/>
+            <feDisplacementMap in="SourceGraphic" in2="result4" result="result6" scale="10"/>
+            <feBlend in="result6" in2="result5" mode="multiply"/>
+            <feTurbulence baseFrequency="0.040000000000000001" in="SourceGraphic" numOctaves="5" seed="8" type="fractalNoise"/>
+            <feColorMatrix result="result12" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/>
+            <feComponentTransfer result="result14">
+                <feFuncR intercept="-2.3809523809523814" slope="4.7899159663865554" type="identity"/>
+                <feFuncG type="identity"/>
+                <feFuncB type="identity"/>
+                <feFuncA amplitude="0.99999999999999989" exponent="6.0000000000000036" intercept="2.7755575615628914e-17" offset="2.7755575615628914e-17" slope="1" tableValues="0 0 1" type="gamma"/>
+            </feComponentTransfer>
+            <feComposite in="result14" in2="result6" operator="in" result="result17"/>
+            <feSpecularLighting kernelUnitLength="0.58299251870324198" result="result13" specularExponent="3" surfaceScale="-3.6403508771929824">
+                <feDistantLight azimuth="256" elevation="47"/>
+            </feSpecularLighting>
+            <feBlend in="SourceGraphic" in2="result13" mode="hard-light" result="result15"/>
+            <feBlend in="result13" in2="result5" mode="multiply" result="result16"/>
+            <feOffset dx="0" dy="0" in="result16" result="result10"/>
+            <feBlend in="result16" in2="result6" mode="luminosity"/>
+        </filter>
+    </defs>
+    <g stroke-linejoin="round">
+        <rect width="512" height="512" fill="none" stop-color="#000000" stroke="#ccc" stroke-width="20"/>
+        <path transform="translate(-47.667 -37.667)" d="m52.667 42.667v75.334h160.67v-75.334zm170.67 0v75.334h160.67v-75.334zm170.67 0v75.334h160.67v-75.334zm-341.33 85.334v75.332h75.334v-75.332zm85.334 0v75.332l56.755-2 34.671 2h69.24v-75.332zm335.33 77.332-2.5097-29.907-10.866 1.3508-40.814 21.69 7.7904 6.6177zm-4-40.236v-37.096h-160.67v75.332h99.435zm10-37.096v75.332h75.334v-75.332zm-426.67 85.332v75.334h160.67v-75.334zm170.67 0v42.546c0 9.1798 5.7838 33.831 14.963 33.775l161.7-0.98783v-75.334zm186.67 0 2 71.334 142.67 4v-75.334zm-357.33 85.334v75.334h75.334v-75.334zm232 75.334 14.72-38.01-0.72003-37.324h-160.67v75.334zm24-75.334v57.08c-0.67001 29.987 113.54 16.252 160.67 16.252v-73.332zm170.67 0v75.332h75.334v-75.332zm-111.33 85.332-154.67 2e-3v75.334l154.67-2e-3zm10 0v60.653l8 14.681h168.67v-75.334zm-325.33 2e-3v75.334h150.67v-75.334zm0 85.332v75.334h75.334v-75.334zm256 0v75.334h160.67v-75.334zm170.67 0v75.334h75.332v-75.334zm-341.33 2e-3v75.332h160.67v-75.332z" color="#000000" fill="#800000" fill-rule="evenodd" filter="url(#filter7769)" style="-inkscape-stroke:none"/>
+    </g>
+</svg>

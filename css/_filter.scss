@@ -1,0 +1,20 @@
+.filter {
+	border: 1px solid hsl(var(--hue), var(--sat), 50%);
+	position: absolute;
+	display: grid;
+	grid-template-rows: auto 1fr;
+	border-radius: .4em;
+	overflow: hidden;
+	box-shadow: 1px 1px 2px hsla(var(--hue), var(--sat), 0%, .5);
+	margin: 1em;
+	h2 {
+		background: hsl(var(--hue), var(--sat), 50%);
+		color: white;
+		font-size: 1em;
+		margin: 0;
+		padding: 0.25em;
+	}
+	form {
+		padding: 0.5em;
+	}
+}

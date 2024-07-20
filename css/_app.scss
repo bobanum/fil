@@ -1,0 +1,27 @@
+#interface {
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: auto 1fr;
+	grid-template-columns: 1fr 20em;
+	header {
+		background-color: #ccc;
+		padding: .5em;
+		grid-column: 1 / -1;
+	}
+}
+.preview {
+	border-left: 5px ridge #ccc;
+	display: grid;
+	align-items: stretch;
+	justify-items: stretch;
+	align-content: stretch;
+	justify-content: stretch;
+	svg {
+		grid-row: 1 / -1;
+		grid-column: 1 / -1;
+		align-self: stretch;
+		justify-self: stretch;
+		width: auto;
+		height: auto;
+	}
+}
