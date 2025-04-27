@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,78 +9,29 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" href="img/logo_fil.svg" type="image/x-icon">
 	<script type="module">
-		import './webponents/window/index.js';
+		import './index.js';
 	</script>
 </head>
+
 <body>
-	<wp-window title="feGaussianBlur" footerless>
-		wow!
-	</wp-window>
 	<div id="interface">
-		<header><h1>SVG-Filters</h1></header>
+		<header>
+			<h1>SVG-Filters</h1>
+		</header>
 		<div id="app">
-			<div class="filter">
-				<h2>feGaussianBlur : flou</h2>
-				<div class="body">
-					<img src="" alt="">
-				</div>
-				<form action="">
-					<fieldset>
-						<legend>Paramètres</legend>
-						<div>
-							<label for="stdDeviation">stdDeviation</label>
-							<input type="number" name="stdDeviation" id="stdDeviation" min="0" max="10" value="0" step=".1" size="6">
-						</div>
-					</fieldset>
-				</form>
-				<!-- <feGaussianBlur in="SourceAlpha" result="result1" stdDeviation="2"/> -->
-		
-			</div>
-			<div class="filter" draggable="true" style="left:25%;">
-				<h2>feTurbulence : bruit</h2>
-				<div class="body">
-					<img src="" alt="">
-				</div>
-				<form action="">
-					<fieldset>
-						<legend>Paramètres</legend>
-						<div>
-							<label for="type">type</label>
-							<select name="type" id="type">
-								<option value="fractalNoise">fractalNoise</option>
-								<option value="turbulence">turbulence</option>
-							</select>
-						</div>
-						<div>
-							<label for="baseFrequency">baseFrequency</label>
-							<input type="number" name="baseFrequency" id="baseFrequency" min="0" max="10" value="0" step=".1" size="6">
-						</div>
-						<div>
-							<label for="numOctaves">numOctaves</label>
-							<input type="number" name="numOctaves" id="numOctaves" min="0" max="10" value="0" step=".1" size="6">
-						</div>
-						<div>
-							<label for="seed">seed</label>
-							<input type="number" name="seed" id="seed" min="0" max="10" value="0" step=".1" size="6">
-						</div>
-						<div>
-							<label for="stitchTiles">stitchTiles</label>
-							<input type="checkbox" name="stitchTiles" id="stitchTiles">
-						</div>
-					</fieldset>
-				</form>
-				<!-- <feTurbulence baseFrequency="0.04" in="SourceGraphic" numOctaves="2" result="result4" type="fractalNoise"/> -->
-		
-			</div>
+			<fil-fe title="feGaussianBlur" no-resize footerless>
+				wow!
+			</fil-fe>
 		</div>
 		<div class="preview">
 			<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
 				<g stroke-linejoin="round">
-					<rect width="512" height="512" fill="none" stop-color="#000000" stroke="#ccc" stroke-width="20"/>
-					<path transform="translate(-47.667 -37.667)" d="m52.667 42.667v75.334h160.67v-75.334zm170.67 0v75.334h160.67v-75.334zm170.67 0v75.334h160.67v-75.334zm-341.33 85.334v75.332h75.334v-75.332zm85.334 0v75.332l56.755-2 34.671 2h69.24v-75.332zm335.33 77.332-2.5097-29.907-10.866 1.3508-40.814 21.69 7.7904 6.6177zm-4-40.236v-37.096h-160.67v75.332h99.435zm10-37.096v75.332h75.334v-75.332zm-426.67 85.332v75.334h160.67v-75.334zm170.67 0v42.546c0 9.1798 5.7838 33.831 14.963 33.775l161.7-0.98783v-75.334zm186.67 0 2 71.334 142.67 4v-75.334zm-357.33 85.334v75.334h75.334v-75.334zm232 75.334 14.72-38.01-0.72003-37.324h-160.67v75.334zm24-75.334v57.08c-0.67001 29.987 113.54 16.252 160.67 16.252v-73.332zm170.67 0v75.332h75.334v-75.332zm-111.33 85.332-154.67 2e-3v75.334l154.67-2e-3zm10 0v60.653l8 14.681h168.67v-75.334zm-325.33 2e-3v75.334h150.67v-75.334zm0 85.332v75.334h75.334v-75.334zm256 0v75.334h160.67v-75.334zm170.67 0v75.334h75.332v-75.334zm-341.33 2e-3v75.332h160.67v-75.332z" color="#000000" fill="#800000" fill-rule="evenodd" filter="url(#filter7769)" style="-inkscape-stroke:none"/>
+					<rect width="512" height="512" fill="none" stop-color="#000000" stroke="#ccc" stroke-width="20" />
+					<path transform="translate(-47.667 -37.667)" d="m52.667 42.667v75.334h160.67v-75.334zm170.67 0v75.334h160.67v-75.334zm170.67 0v75.334h160.67v-75.334zm-341.33 85.334v75.332h75.334v-75.332zm85.334 0v75.332l56.755-2 34.671 2h69.24v-75.332zm335.33 77.332-2.5097-29.907-10.866 1.3508-40.814 21.69 7.7904 6.6177zm-4-40.236v-37.096h-160.67v75.332h99.435zm10-37.096v75.332h75.334v-75.332zm-426.67 85.332v75.334h160.67v-75.334zm170.67 0v42.546c0 9.1798 5.7838 33.831 14.963 33.775l161.7-0.98783v-75.334zm186.67 0 2 71.334 142.67 4v-75.334zm-357.33 85.334v75.334h75.334v-75.334zm232 75.334 14.72-38.01-0.72003-37.324h-160.67v75.334zm24-75.334v57.08c-0.67001 29.987 113.54 16.252 160.67 16.252v-73.332zm170.67 0v75.332h75.334v-75.332zm-111.33 85.332-154.67 2e-3v75.334l154.67-2e-3zm10 0v60.653l8 14.681h168.67v-75.334zm-325.33 2e-3v75.334h150.67v-75.334zm0 85.332v75.334h75.334v-75.334zm256 0v75.334h160.67v-75.334zm170.67 0v75.334h75.332v-75.334zm-341.33 2e-3v75.332h160.67v-75.332z" color="#000000" fill="#800000" fill-rule="evenodd" filter="url(#filter7769)" />
 				</g>
 			</svg>
 		</div>
 	</div>
 </body>
+
 </html>

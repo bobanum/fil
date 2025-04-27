@@ -9,6 +9,10 @@
 		grid-column: 1 / -1;
 	}
 }
+#app {
+	position: relative;
+	overflow: hidden;
+}
 .preview {
 	border-left: 5px ridge #ccc;
 	display: grid;
